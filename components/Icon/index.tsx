@@ -4,7 +4,7 @@ import { icons } from "./icons"
 const colors: any = {
   red: "#FF6161",
   gray: "#60637B",
-  blue: "#048AFB",
+  blue: "#1f61fb",
   white: "#ffffff",
   green: "#21A73F",
   black: "#171923",
