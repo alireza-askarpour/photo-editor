@@ -1,4 +1,6 @@
-export default function Setting2() {
+import { IIcons } from "types/components/Icon"
+
+export default function Setting2(props: IIcons) {
   return (
     <>
       <path d="M12 15.75c-2.07 0-3.75-1.68-3.75-3.75 0-2.07 1.68-3.75 3.75-3.75 2.07 0 3.75 1.68 3.75 3.75 0 2.07-1.68 3.75-3.75 3.75zm0-6c-1.24 0-2.25 1.01-2.25 2.25s1.01 2.25 2.25 2.25 2.25-1.01 2.25-2.25S13.24 9.75 12 9.75z"></path>

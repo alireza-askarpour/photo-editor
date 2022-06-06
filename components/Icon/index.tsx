@@ -10,6 +10,7 @@ const colors: any = {
   black: "#171923",
   orange: "#F6AD55",
   purple: "#3346F8",
+  yellow: "##facc34",
 }
 
 const Icon = ({ name, size = 24, color = "gray", className }: IIcon) => {
@@ -30,7 +31,7 @@ const Icon = ({ name, size = 24, color = "gray", className }: IIcon) => {
       viewBox="0 0 24 24"
       fill={fill}
     >
-      <IconElement />
+      <IconElement stroke={color} />
     </svg>
   )
 }

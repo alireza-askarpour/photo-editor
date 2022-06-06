@@ -1,4 +1,6 @@
-export default function Crop() {
+import { IIcons } from "types/components/Icon"
+
+export default function Crop(props: IIcons) {
   return (
     <>
       <path d="M19 19.75H9.9c-4.33 0-5.65-1.32-5.65-5.65V5c0-.41.34-.75.75-.75h9.1c4.33 0 5.65 1.32 5.65 5.65V19c0 .41-.34.75-.75.75zm-13.25-14v8.35c0 3.49.66 4.15 4.15 4.15h8.35V9.9c0-3.49-.66-4.15-4.15-4.15H5.75z"></path>
