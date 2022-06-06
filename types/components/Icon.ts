@@ -6,3 +6,7 @@ export interface IIcon {
   color?: "black" | "white" | "red" | "green" | "blue" | "gray" | "orange" | "purple"
   name: IconName
 }
+
+export interface IIcons {
+  stroke?: string
+}
