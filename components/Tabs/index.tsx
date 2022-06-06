@@ -14,7 +14,7 @@ const Tabs = ({ activeIndex, onChange, items }: ITabs) => {
             >
               <Icon
                 name={icon}
-                size={22}
+                size={21}
                 color={activeIndex === index ? "orange" : "gray"}
               />
               {activeIndex === index && (
