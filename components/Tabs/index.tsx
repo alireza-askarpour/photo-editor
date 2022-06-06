@@ -15,10 +15,10 @@ const Tabs = ({ activeIndex, onChange, items }: ITabs) => {
               <Icon
                 name={icon}
                 size={21}
-                color={activeIndex === index ? "orange" : "gray"}
+                color={activeIndex === index ? "blue" : "gray"}
               />
               {activeIndex === index && (
-                <i className="bg-[#F6AD55] absolute inset-0 left-0 w-1 rounded-r"></i>
+                <i className="bg-[#1f61fb] absolute inset-0 left-0 w-1 rounded-r"></i>
               )}
             </li>
           )
@@ -26,7 +26,7 @@ const Tabs = ({ activeIndex, onChange, items }: ITabs) => {
       </ul>
 
       {items.map(({ content, name }, index) => (
-        <div key={name} hidden={activeIndex !== index} className="bg-yellow-50 flex-1">
+        <div key={name} hidden={activeIndex !== index} className="bg-[#fafafe] flex-1">
           {content}
         </div>
       ))}
