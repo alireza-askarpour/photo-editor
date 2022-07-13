@@ -1,0 +1,35 @@
+.RangeSlider {
+  @apply relative appearance-none block w-full h-1 bg-[#d5d5d5] rounded-lg outline-none cursor-pointer my-3.5;
+}
+
+.RangeSlider::-webkit-slider-runnable-track {
+  @apply appearance-none h-2;
+}
+
+.RangeSlider::-moz-track {
+  @apply appearance-none h-2;
+}
+
+.RangeSlider::-ms-track {
+  @apply appearance-none h-2;
+}
+
+.RangeSlider::-webkit-slider-thumb {
+  @apply appearance-none w-5 h-5 bg-[#1f61fb] rounded-full cursor-pointer -mt-1.5 border-none transition duration-300;
+}
+
+.RangeSlider::-webkit-slider-thumb:hover {
+  @apply shadow-[0_0_0_8px_#136dc729];
+}
+
+.RangeSlider:active::-webkit-slider-thumb {
+  @apply shadow-[0_0_0_14px_#136dc729];
+}
+
+.RangeSlider::-moz-range-thumb {
+  @apply appearance-none w-5 h-5 bg-[#1f61fb] rounded-full cursor-pointer -mt-1.5 border-none;
+}
+
+.RangeSlider::-ms-thumb {
+  @apply appearance-none w-5 h-5 bg-[#1f61fb] rounded-full cursor-pointer -mt-1.5 border-none;
+}
