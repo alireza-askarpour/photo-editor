@@ -21,17 +21,15 @@ const RangeSlider = ({ min, max, value, onChange }: IRangeSlider) => {
   }, [])
 
   return (
-    <div className={styles.Container}>
-      <input
-        ref={inputRef}
-        type="range"
-        min={min}
-        max={max}
-        value={value}
-        onInput={handleSliderChange}
-        className={styles.RangeSlider}
-      />
-    </div>
+    <input
+      ref={inputRef}
+      type="range"
+      min={min}
+      max={max}
+      value={value}
+      onInput={handleSliderChange}
+      className={styles.RangeSlider}
+    />
   )
 }
 
