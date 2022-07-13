@@ -8,7 +8,7 @@ const setBackgroundSlider = (value: number, max: number, inputRef: any) => {
   inputRef.current.style.background = background
 }
 
-const RangeSlider = ({ min, max, value, onChange }: IRangeSlider) => {
+const RangeSlider = ({ min, max, step, value, onChange }: IRangeSlider) => {
   const inputRef = useRef<any>(null)
 
   const handleSliderChange = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
@@ -18,7 +18,7 @@ const RangeSlider = ({ min, max, value, onChange }: IRangeSlider) => {
 
   useEffect(() => {
     setBackgroundSlider(+value, max, inputRef)
-  }, [])
+  }, [max])
 
   return (
     <input
@@ -26,6 +26,7 @@ const RangeSlider = ({ min, max, value, onChange }: IRangeSlider) => {
       type="range"
       min={min}
       max={max}
+      step={step}
       value={value}
       onInput={handleSliderChange}
       className={styles.RangeSlider}
