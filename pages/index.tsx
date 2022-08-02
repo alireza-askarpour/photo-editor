@@ -1,9 +1,16 @@
 import PageWrapper from "components/Layout/PageWrapper"
+import DropFileInput from "components/DropFileInput"
 
 const Home = () => {
+  const handleFileChange = (value: any) => {
+    console.log(value)
+  }
+
   return (
     <PageWrapper>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <section className="h-screen bg-gray-100 grid place-items-center">
+        <DropFileInput onFileChange={handleFileChange} />
+      </section>
     </PageWrapper>
   )
 }
